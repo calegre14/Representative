@@ -12,6 +12,12 @@
 		28DC5AB223468F28005C8302 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DC5AB023468F28005C8302 /* Main.storyboard */; };
 		28DC5AB423468F29005C8302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28DC5AB323468F29005C8302 /* Assets.xcassets */; };
 		28DC5AB723468F29005C8302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DC5AB523468F29005C8302 /* LaunchScreen.storyboard */; };
+		28DC5AC623469143005C8302 /* Representative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC5AC523469143005C8302 /* Representative.swift */; };
+		28DC5AC8234693B3005C8302 /* RepresentativeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC5AC7234693B3005C8302 /* RepresentativeController.swift */; };
+		28DC5ACA23469AA3005C8302 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC5AC923469AA3005C8302 /* States.swift */; };
+		28DC5ACC23469BBD005C8302 /* StateListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC5ACB23469BBD005C8302 /* StateListTableViewController.swift */; };
+		28DC5ACF2346A7A7005C8302 /* StateDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC5ACE2346A7A7005C8302 /* StateDetailTableViewController.swift */; };
+		28DC5AD32346BA91005C8302 /* RepresentativeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC5AD22346BA91005C8302 /* RepresentativeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		28DC5AB323468F29005C8302 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28DC5AB623468F29005C8302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28DC5AB823468F29005C8302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28DC5AC523469143005C8302 /* Representative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Representative.swift; sourceTree = "<group>"; };
+		28DC5AC7234693B3005C8302 /* RepresentativeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeController.swift; sourceTree = "<group>"; };
+		28DC5AC923469AA3005C8302 /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
+		28DC5ACB23469BBD005C8302 /* StateListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateListTableViewController.swift; sourceTree = "<group>"; };
+		28DC5ACE2346A7A7005C8302 /* StateDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDetailTableViewController.swift; sourceTree = "<group>"; };
+		28DC5AD22346BA91005C8302 /* RepresentativeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,8 @@
 		28DC5ABF23468F4C005C8302 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				28DC5AC523469143005C8302 /* Representative.swift */,
+				28DC5AC923469AA3005C8302 /* States.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,6 +115,9 @@
 		28DC5AC223468F63005C8302 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				28DC5ACB23469BBD005C8302 /* StateListTableViewController.swift */,
+				28DC5ACE2346A7A7005C8302 /* StateDetailTableViewController.swift */,
+				28DC5AD22346BA91005C8302 /* RepresentativeTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -108,6 +125,7 @@
 		28DC5AC323468F6B005C8302 /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				28DC5AC7234693B3005C8302 /* RepresentativeController.swift */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -191,8 +209,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28DC5AD32346BA91005C8302 /* RepresentativeTableViewCell.swift in Sources */,
+				28DC5ACA23469AA3005C8302 /* States.swift in Sources */,
+				28DC5ACC23469BBD005C8302 /* StateListTableViewController.swift in Sources */,
 				28DC5AAB23468F28005C8302 /* AppDelegate.swift in Sources */,
 				28DC5AAD23468F28005C8302 /* SceneDelegate.swift in Sources */,
+				28DC5ACF2346A7A7005C8302 /* StateDetailTableViewController.swift in Sources */,
+				28DC5AC8234693B3005C8302 /* RepresentativeController.swift in Sources */,
+				28DC5AC623469143005C8302 /* Representative.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5XC6N4RBRH;
-				INFOPLIST_FILE = Representative/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Representative/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,7 +380,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5XC6N4RBRH;
-				INFOPLIST_FILE = Representative/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Representative/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
